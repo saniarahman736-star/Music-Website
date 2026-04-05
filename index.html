@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Hub</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <h2>MusicHub</h2>
+            <ul>
+                <li>🏠 Home</li>
+                <li>🔍 Search
+                    <input type="text" id="searchInput"
+                    placeholder="Search songs...">
+                    <div id="searchResults"></div>
+                </li>
+                <li onclick="showLibrary()">📚 Your library</li>
+                <div id="library"></div>
+                <li onclick="showLikedSongs()">❤️ Liked Songs</li>
+                <div id="likedSongs"></div>
+            </ul>
+        </div>
+        <div class="main">
+            <h1 id="greeting"></h1>
+            <h2>Albums</h2>
+            <div class="album-container"></div>
+        <div class="album-container">
+            <div class="card">
+                <img src="album1.jpeg">
+                <p>Discover Weekly</p>
+            </div>
+            <div class="card">
+                <img src="album6.jpg">
+                <p>Top Hits</p>
+            </div>
+            <div class="card">
+                <img src="album3.png">
+                <p>Party Hits</p>
+            </div>
+            <div class="card">
+                <img src="album4.jpg">
+                <p>Relax Mix</p>
+            </div>
+            <div class="card">
+                <img src="album5.webp">
+                <p>WorkOut Mix</p>
+            </div>
+            <div class="card">
+                <img src="album2.jpeg">
+                <p>Chill Vibes</p>
+            </div>
+            <h2>Song List</h2>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(0)">On My Way
+                </div>
+            </div>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(1)">We Don't Talk AnyMore
+                
+                 </div>
+            </div>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(2)">Dreamers
+            
+            </div>
+            </div>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(3)">Alone
+        
+            </div>
+            </div>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(4)">Love Me Like You Do
+                
+            </div>
+            </div>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(5)">Gehra Hua
+                
+            </div>
+            </div>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(6)">Sitaare
+                
+            </div>
+            </div>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(7)">Dil Mein Ho Tum
+                
+            </div>
+            </div>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(8)">Purano Shei Diner Kotha
+                
+            </div>
+            </div>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(9)">Perfect
+                
+            </div>
+            </div>
+            <div class="song-list">
+                <div class="song"
+                onclick="playSong(10)">Sapphire
+               
+            </div>
+            </div>
+           
+
+            </div>
+            <div class="player">
+            <button onclick="prevSong()">⏮️</button>
+            <button id="playBtn"
+            onclick="playPause()">▶️</button>
+            <button onclick="nextSong()">⏭️</button>
+            <span id="songName">Song</span>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
